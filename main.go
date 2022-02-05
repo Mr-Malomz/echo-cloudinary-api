@@ -8,7 +8,7 @@ func main() {
     e := echo.New()
 
     e.GET("/", func(c echo.Context) error {
-          return c.JSON(200, &echo.Map{"data": "Hello from Echo & mongoDB"})
+          return c.JSON(200, &echo.Map{"data": "Hello from Cloudinary"})
     })
 
     e.Logger.Fatal(e.Start(":6000"))
